@@ -1,0 +1,20 @@
+CREATE TABLE user (
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username varchar(255),
+    password varchar(255),
+    profile varchar(255)
+);
+
+insert into user(username,password,profile)values('tanmay','tanmay123','admin');
+
+CREATE TABLE trainee (
+    trainee_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    trainee_name varchar(255),
+    branch varchar(255),
+    percentage double
+);
+
+insert into trainee(trainee_name,branch,percentage)values('tanmay','ORACLE',88.20);
+
+ALTER TABLE trainee
+MODIFY COLUMN branch varchar(255);
